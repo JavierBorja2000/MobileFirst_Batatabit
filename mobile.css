@@ -1,0 +1,260 @@
+:root {
+    /*Colores*/
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D5;
+    --secondary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+    --warm-black: #201E1C;
+    --black: #282623;
+    --grey: #BABABA;
+    --off-white: #FAF8F7;
+    --just-white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+header img {
+    width: 151px;
+    height: 24px;
+    margin-top: 60px; /*39*/
+}
+
+.header__contenedor-titulo {
+    display: flex; /*En duda*/
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    min-width: 288;
+    max-width: 900px; 
+    height: 218px;
+    margin-top: 36px; /*33*/
+}
+
+.header__contenedor-titulo h1{
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--just-white)
+}
+
+.header__contenedor-titulo p {
+    margin-top: 24px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+
+.header__boton {
+    position: absolute;
+    display: block;
+    bottom: -16px;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background: var(--off-white);
+    /*Sombras*/
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black)
+}
+
+.header__boton span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 6px;
+    background-image: url(./assets/icons/down-arrow.svg); 
+}
+
+/*MAIN*/
+main {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background: var(--off-white);
+}
+.main-intercambio {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main-intercambio .backgroundimg{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    background-image: url(./assets/img/Bitcoin.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-intercambio__titulo {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-intercambio__titulo h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--warm-black)
+}
+
+.main-intercambio__titulo p{
+    margin-top: 24px;
+    margin-bottom: 40px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+
+/*seccion de Intercambio TABLAS*/
+.contenedor-tabla-moneda,
+.contenedor-tabla-comision {
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto 18px; /*margin-bottom por si acaso*/
+    font-family: 'Inter', sans-serif;
+}
+
+.contenedor-tabla-moneda__titulo,
+.contenedor-tabla-comision__titulo {
+    margin: 0 5px 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--bitcoin-orange);
+}
+
+.contenedor-tabla-comision__titulo {
+    color: var(--secondary-blue);
+}
+
+.contenedor-tabla-moneda__tabla,
+.contenedor-tabla-comision__tabla {
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.contenedor-tabla-moneda__tabla table,
+.contenedor-tabla-comision__tabla table {
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-tabla-moneda__tabla td,
+.contenedor-tabla-comision__tabla td {
+    width: 50%;
+    padding: 10px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    background-color: var(--just-white);
+    color: var(--grey)
+}
+
+.contenedor-tabla-moneda__tabla .tabla--top-left
+.contenedor-tabla-comision__tabla .tabla--top-left {
+    border-radius: 15px 0 0 0;
+}
+
+.contenedor-tabla-moneda__tabla .tabla--top-rigth,
+.contenedor-tabla-comision__tabla .tabla--top-rigth {
+    border-radius: 0 15px 0 0;
+}
+
+.contenedor-tabla-moneda__tabla .table--bottom-rigth,
+.contenedor-tabla-comision__tabla .table--bottom-rigth {
+    border-radius: 0 0 15px 0;
+}
+
+.contenedor-tabla-moneda__tabla .table--bottom-left,
+.contenedor-tabla-comision__tabla .table--bottom-left {
+    border-radius: 0 0 0 15px;
+}
+
+.contenedor-tabla-moneda__tabla .tabla-rigth,
+.contenedor-tabla-comision__tabla .tabla-rigth {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+}
+
+.contenedor-tabla-moneda__tabla .--trending-down {
+    display: inline-block;
+    width: 11px;
+    height: 6px;
+    margin-left: 10px;
+    background-image: url(./assets/icons/trending-down.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenedor-tabla-moneda__tabla .--trending-up {
+    display: inline-block;
+    width: 11px;
+    height: 6px;
+    margin-left: 10px;
+    background-image: url(./assets/icons/trending-up.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenedor-tabla-moneda__actualizacion,
+.contenedor-tabla-comision__actualizacion {
+    width: 180px;
+    height: 35px;
+    margin: 15px auto 0;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    line-height: 35px;
+    color: var(--warm-black);
+    background: var(--soft-orange);
+}
+
+.contenedor-tabla-comision__actualizacion {
+    background: var(--soft-blue);
+}
