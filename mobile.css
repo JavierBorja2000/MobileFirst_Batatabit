@@ -104,7 +104,6 @@ main {
     width: 100%;
     height: auto;
     padding-top: 80px;
-    padding-bottom: 30px;
     text-align: center;
 }
 
@@ -130,7 +129,7 @@ main {
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
-    color: var(--warm-black)
+    color: var(--warm-black);
 }
 
 .main-intercambio__titulo p{
@@ -257,4 +256,105 @@ main {
 
 .contenedor-tabla-comision__actualizacion {
     background: var(--soft-blue);
+}
+
+/*Seccion Beneficios*/
+.main-beneficios {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 40px 16px 20px;
+    background: var(--warm-black);
+    color: var(--just-white);
+}
+
+.main-beneficios__batata-logo {
+    position:absolute;
+    top: -10px;
+    left: calc(50% - 20px);
+    width: 40px;
+    height: 25px;
+    background-image: url(./assets/icons/batata.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-beneficios__titulo {
+    width: 90%;
+    min-width: 288px;
+    margin: 0 auto;
+}
+
+.main-beneficios__titulo h2 {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: bold;
+}
+
+.main-beneficios__titulo p {
+    margin-top: 24px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+.main-beneficios__cards {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.card {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 152px;
+    margin: 0 auto 15px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+    background: var(--black);
+}
+
+.card__icono {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card__icono.clock {
+    background-image: url(./assets/icons/clock.svg);
+}
+
+.card__icono.eye {
+    background-image: url(./assets/icons/eye.svg);
+}
+
+.card__icono.dollar {
+    background-image: url(./assets/icons/dollar-sign.svg);
+}
+
+.card__icono.check {
+    background-image: url(./assets/icons/check-circle.svg);
+}
+
+.card__titulo {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+}
+
+.card__parrafo {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
 }
