@@ -1,0 +1,19 @@
+.main-intercambio__tablas {
+    width: 973px;
+    margin: 0 auto;
+}
+
+.main-beneficios__cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 941px;
+    margin: 30px auto 0
+}
+
+.main-bitcoin-background {
+    height: 70vh;
+}
+
+.main-planes__cards {
+    justify-content: center;
+}

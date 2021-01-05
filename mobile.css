@@ -18,6 +18,7 @@
 }
 
 html{
+    scroll-behavior : smooth;
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
 }
@@ -142,13 +143,23 @@ main {
 }
 
 /*seccion de Intercambio TABLAS*/
+.main-intercambio__tablas {
+    display: flex;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    height: 385px;
+}
+
 .contenedor-tabla-moneda,
 .contenedor-tabla-comision {
+    scroll-snap-align: center;
     width: 70%;
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto 18px; /*margin-bottom por si acaso*/
+    margin-bottom: 18px;
+    margin-left: 35px;
     font-family: 'Inter', sans-serif;
 }
 
@@ -368,6 +379,7 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .main-bitcoin-background h2 {
@@ -409,7 +421,7 @@ main {
 .main-planes__cards {
     display: flex;
     align-items: center;
-    overflow-x: scroll;
+    overflow-x: auto;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
     height: 300px;
@@ -509,4 +521,47 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     vertical-align: text-bottom;
+}
+
+/*Footer*/
+.footer {
+    display: flex;
+    width: 100%;
+    min-width: 320px;
+    height: 150px;
+    background: var(--bitcoin-orange);
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+}
+
+.link__item a {
+    display: block;
+    margin-bottom: 8px;
+    font: 500 1.4rem/1.8rem 'DM Sans', sans-serif;
+    text-decoration: none;
+    color: var(--just-white);
+}
+
+.footer__links .link__item:first-child a {
+    margin-right: 25px;
+}
+
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.footer__logo span {
+    width: 64px;
+    height: 50px;
+    background-image: url(./assets/img/logo-footer.svg);
 }
